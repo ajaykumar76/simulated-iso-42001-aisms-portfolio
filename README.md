@@ -36,6 +36,10 @@ The author has previously described a local working project containing an AI inv
 
 See [`docs/TEMPLATE_COMPLETION_GUIDE.md`](docs/TEMPLATE_COMPLETION_GUIDE.md) for field conventions, recommended completion order, traceability checks and publication safeguards.
 
+## Release-readiness and data-integrity checks
+
+Use [`docs/RELEASE_READINESS_CHECKLIST.md`](docs/RELEASE_READINESS_CHECKLIST.md) before publishing completed records. The checklist covers source-file hygiene, the two similarly named local impact-assessment folders, identifier traceability, risk/impact scoring, supplier links, evidence status, audit/CAPA integrity and clean-clone validation. It does not imply those checks have already passed.
+
 ## Suggested workflow
 
 1. Define organisational context, intended purpose, AIMS scope, boundaries and interested parties.
