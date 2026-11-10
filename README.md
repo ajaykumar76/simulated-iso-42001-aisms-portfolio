@@ -32,6 +32,10 @@ Because the scenario concerns employment and recruitment, the project treats pot
 
 The author has previously described a local working project containing an AI inventory, 10 risk records, 8 impact assessments, 10 treatment records, 5 supplier records, 14 control/evidence records, 15 audit checklist items and 6 simulated findings. **Those local records are not included in this GitHub repository yet**, so the counts above are not independently verifiable here and are not presented as published deliverables.
 
+## Template completion guide
+
+See [`docs/TEMPLATE_COMPLETION_GUIDE.md`](docs/TEMPLATE_COMPLETION_GUIDE.md) for field conventions, recommended completion order, traceability checks and publication safeguards.
+
 ## Suggested workflow
 
 1. Define organisational context, intended purpose, AIMS scope, boundaries and interested parties.
