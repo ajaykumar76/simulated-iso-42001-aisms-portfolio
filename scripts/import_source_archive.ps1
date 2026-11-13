@@ -77,6 +77,20 @@ try {
     }
 
     Copy-Item -LiteralPath $source -Destination (Join-Path $repoRoot "iso42001") -Recurse
+
+    # Validate the imported tree before staging or asking for publication approval.
+    # The repository validator checks CSV structure, required source paths and README links.
+    $python = Get-Command python -ErrorAction SilentlyContinue
+    if (-not $python) {
+        Remove-Item -LiteralPath (Join-Path $repoRoot "iso42001") -Recurse -Force
+        Fail "Python was not found on PATH. Install Python 3 and rerun; the imported folder was removed."
+    }
+    & $python.Source (Join-Path $repoRoot "scripts/validate_portfolio.py")
+    if ($LASTEXITCODE -ne 0) {
+        Remove-Item -LiteralPath (Join-Path $repoRoot "iso42001") -Recurse -Force
+        Fail "Repository validation failed after import. The copied iso42001 folder was removed; no commit was created."
+    }
+
     git add -- iso42001
     git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) {
