@@ -7,6 +7,7 @@ compliance, or conformity with ISO/IEC 42001.
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import re
 import sys
@@ -137,6 +138,14 @@ def validate_source_tree() -> tuple[list[str], list[str]]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Validate the simulated ISO/IEC 42001 portfolio.")
+    parser.add_argument(
+        "--require-source",
+        action="store_true",
+        help="Fail unless the complete reviewed iso42001/ source project is present.",
+    )
+    args = parser.parse_args()
+
     files = csv_files()
     issues: list[str] = []
     warnings: list[str] = []
@@ -152,6 +161,8 @@ def main() -> int:
     source_issues, source_warnings = validate_source_tree()
     issues.extend(source_issues)
     warnings.extend(source_warnings)
+    if args.require_source and not (ROOT / "iso42001").is_dir():
+        issues.append("iso42001/: required source project is absent; publish the reviewed source records before this CI check can pass.")
 
     if issues:
         print("Portfolio validation failed:")
