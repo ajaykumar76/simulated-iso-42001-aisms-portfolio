@@ -36,6 +36,10 @@ The author has previously described a local working project containing an AI inv
 
 See [LOCAL_PROJECT_SOURCE_MANIFEST.md](docs/LOCAL_PROJECT_SOURCE_MANIFEST.md) for the author-reported local record inventory and the exact publication status. These records have not yet been imported into this repository; the counts are not presented as verified GitHub deliverables.
 
+## Worked case study
+
+See [`docs/WORKED_CASE_STUDY.md`](docs/WORKED_CASE_STUDY.md) for a recruiter-facing simulated scenario covering scope, intended use, affected parties, illustrative risk and impact scenarios, treatment actions, proposed audit tests, a hypothetical finding, management review and portfolio limitations. The example IDs and scores are illustrative and must not be merged into the source registers without reconciliation.
+
 ## Template completion guide
 
 See [`docs/TEMPLATE_COMPLETION_GUIDE.md`](docs/TEMPLATE_COMPLETION_GUIDE.md) for field conventions, recommended completion order, traceability checks and publication safeguards.
