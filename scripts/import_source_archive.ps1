@@ -34,6 +34,10 @@ $branch = (git branch --show-current).Trim()
 if ($branch -ne "main") {
     Fail "Current branch is '$branch'. Switch to main before importing."
 }
+$workingTree = git status --porcelain
+if ($workingTree) {
+    Fail "Working tree is not clean. Commit, stash or otherwise resolve existing changes before importing; this script will not touch them."
+}
 $remote = (git remote get-url origin 2>$null)
 if (-not $remote -or $remote -notmatch "ajaykumar76/simulated-iso-42001-aisms-portfolio") {
     Fail "The origin remote does not point to ajaykumar76/simulated-iso-42001-aisms-portfolio."
