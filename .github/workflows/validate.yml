@@ -1,4 +1,4 @@
-name: Portfolio structure checks
+name: Portfolio structure and integrity checks
 
 on:
   push:
@@ -20,5 +20,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate CSV file structure
+      - name: Validate CSV structure and content
         run: python scripts/validate_portfolio.py --require-source
+      - name: Validate cross-register integrity
+        run: python scripts/validate_relationships.py
