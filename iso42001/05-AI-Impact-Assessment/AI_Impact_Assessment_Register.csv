@@ -1,9 +1,9 @@
-Assessment ID,System,Domain,Stakeholders,Potential impact,Mitigation,Status,Record status
-AII-001,CV extraction,Privacy,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-002,Candidate ranking,Fairness,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-003,Candidate summaries,Accuracy,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-004,Chatbot,Transparency,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-005,Analytics,Data protection,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-006,CV extraction,Security,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-007,Ranking,Human oversight,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-008,All systems,Accountability,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+Assessment ID,System,Impact domain,Affected stakeholders,Potential impact,Mitigation / safeguard,Related risk ID,Status,Record status
+AII-001,CV extraction,Privacy,Applicants,Applicant data may be exposed through excessive access or retention,"Data minimisation, role-based access and retention review",AIR-001,Open,Simulated
+AII-002,Candidate ranking,Fairness,Applicants,Unequal error rates or proxy variables may disadvantage groups,"Representative evaluation, subgroup monitoring and escalation",AIR-002,Open,Simulated
+AII-003,Candidate summaries,Accuracy,Applicants and recruiters,Omissions or fabricated details may distort candidate assessment,Source-linked summaries and mandatory recruiter verification,AIR-003,Open,Simulated
+AII-004,Recruitment chatbot,Transparency,Applicants,Applicants may not understand they are interacting with AI,Clear AI disclosure and human escalation channel,AIR-004,Open,Simulated
+AII-005,Recruitment analytics,Privacy,Applicants and staff,Small cohorts may reveal individual information,Aggregation thresholds and restricted report access,AIR-005,Open,Simulated
+AII-006,CV extraction,Security,Applicants and service operators,Malicious files may manipulate extraction or downstream prompts,"File validation, isolation and adversarial testing",AIR-006,Open,Simulated
+AII-007,Candidate ranking,Human oversight,Applicants and recruiters,Automation bias may weaken independent human judgement,"Documented review, override authority and reviewer training",AIR-007,Open,Simulated
+AII-008,All systems,Accountability,"Applicants, customers and staff",Unclear responsibility may delay remediation of harmful outcomes,"Named accountability, escalation and supplier responsibilities",AIR-008,Open,Simulated

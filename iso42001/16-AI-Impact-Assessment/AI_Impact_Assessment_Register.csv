@@ -1,9 +1,9 @@
-Assessment ID,System,Domain,Stakeholders,Potential impact,Mitigation,Status,Record status
-AII-001,CV extraction,Privacy,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-002,Candidate ranking,Fairness,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-003,Candidate summaries,Accuracy,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-004,Chatbot,Transparency,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-005,Analytics,Data protection,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-006,CV extraction,Security,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-007,Ranking,Human oversight,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
-AII-008,All systems,Accountability,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+Assessment ID,System,Impact domain,Affected stakeholders,Potential impact,Mitigation / safeguard,Related risk ID,Status,Record status
+AII-009,CV extraction,Data quality,Applicants,Incorrect extraction may omit qualifications or misstate employment history,Field-level confidence indicators and source document comparison,AIR-003,Open,Simulated
+AII-010,Candidate ranking,Contestability,Applicants,Applicants may be unable to challenge inaccurate or unfair recommendations,Accessible correction and complaint route with human review,AIR-002,Open,Simulated
+AII-011,Candidate summaries,Transparency,Recruiters,Users may not understand model limitations or summary uncertainty,"User guidance, uncertainty notices and source traceability",AIR-003,Open,Simulated
+AII-012,Recruitment chatbot,Accessibility,Applicants,Chatbot interaction may disadvantage users with accessibility or language needs,Accessible alternatives and human contact option,AIR-004,Open,Simulated
+AII-013,Recruitment analytics,Purpose limitation,Applicants,Secondary analytics use may exceed the communicated purpose,"Documented purposes, access restrictions and review",AIR-005,Open,Simulated
+AII-014,CV extraction,Security,Applicants,Sensitive information may be processed beyond the intended fields,"Field allow-list, redaction and access monitoring",AIR-001,Open,Simulated
+AII-015,Candidate ranking,Human oversight,Recruiters,Time pressure may cause nominal rather than meaningful review,"Workflow gates, review sampling and override monitoring",AIR-007,Open,Simulated
+AII-016,All systems,Lifecycle,Applicants and customers,Model or system changes may invalidate prior impact assumptions,Change-triggered reassessment and version-specific records,AIR-008,Open,Simulated
