@@ -24,6 +24,10 @@ Because the scenario concerns employment and recruitment, the project treats pot
 
 GitHub Actions runs `scripts/validate_portfolio.py` on pushes and pull requests to `main`. It checks CSV readability, header integrity, duplicate column names and row-width consistency. A passing result confirms file-structure checks only; it does **not** verify the accuracy of risk assessments, implementation of controls, sufficiency of evidence, audit conclusions or ISO/IEC 42001 conformity.
 
+## Source archive review
+
+The local source archive has been reviewed and its selected 50-file working set has passed its bundled structural/count validator. See [`docs/SOURCE_ARCHIVE_VALIDATION.md`](docs/SOURCE_ARCHIVE_VALIDATION.md) for the reviewed register inventory, record counts, backup-handling notes and limitations. **The 50 source files themselves have not yet been imported into this repository**; the archive review document is not a substitute for those records.
+
 ## What is currently in this repository
 
 | Path | Purpose | Status |
