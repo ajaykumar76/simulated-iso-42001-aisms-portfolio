@@ -15,7 +15,10 @@ def load(relative):
 def norm(value):
     value = re.sub(r"[^a-z0-9]+", "", (value or "").casefold())
     return {
-        "candidatesummaries": "candidatesummary",
+        "candidatesummaries": "candidatesummarygenerator",
+        "candidatesummary": "candidatesummarygenerator",
+        "candidateranking": "candidaterankingengine",
+        "cvextraction": "cvextractionassistant",
         "analytics": "recruitmentanalytics",
     }.get(value, value)
 
