@@ -4,24 +4,34 @@ The reviewed archive is a 50-file simulated ISO/IEC 42001 portfolio working set.
 
 ## One-time import (Windows PowerShell)
 
-1. Download the **MaltaAI-Governance-GitHub-Ready.zip** archive from your ChatGPT file/library attachment to your computer.
-2. Clone the repository if you have not already:
+1. Download **MaltaAI-Governance-GitHub-Ready.zip** from your ChatGPT Library to your computer.
+2. Open PowerShell and enter your local clone. If you do not have a clone yet, run:
 
    ```powershell
+   cd $HOME
    git clone https://github.com/ajaykumar76/simulated-iso-42001-aisms-portfolio.git
    cd simulated-iso-42001-aisms-portfolio
    ```
 
-3. Download or copy `scripts/import_source_archive.ps1` from this repository into the cloned repository's `scripts` folder.
-4. Run from the repository root, passing the archive's full path:
+   If you already have the clone, change into that repository folder instead.
+3. Pull the latest repository changes so the import script is present:
 
    ```powershell
-   .\scripts\import_source_archive.ps1 -ArchivePath "C:\Users\YOUR_USER\Downloads\MaltaAI-Governance-GitHub-Ready.zip"
+   git switch main
+   git pull origin main
    ```
 
-5. Review the staged list. The script requires you to type `PUBLISH` before it commits and pushes.
+4. Run the importer, adjusting the ZIP path if it is not in Downloads:
 
-The script refuses to overwrite an existing `iso42001/` folder, checks for the expected key registers, and verifies the Git remote and branch before copying. If push fails, the local commit remains and can be pushed after resolving the reported Git issue.
+   ```powershell
+   .\scripts\import_source_archive.ps1 -ArchivePath "$HOME\Downloads\MaltaAI-Governance-GitHub-Ready.zip"
+   ```
+
+5. The importer checks the repository, archive structure, required source records and CSV/repository validation before staging. Review the staged list. Type `PUBLISH` only if the list is correct; the script then commits and pushes to `main`.
+
+## Safety checks
+
+The importer refuses to overwrite an existing `iso42001/` folder, refuses a dirty working tree, checks the branch and origin remote, and validates the copied source tree before staging. If validation fails, it removes only the newly copied `iso42001/` folder and does not create a commit. If push fails after a successful commit, the local commit remains and can be pushed after resolving the Git error.
 
 ## What gets imported
 
@@ -29,4 +39,4 @@ The archive's `iso42001/` directory is imported intact, including both distinct 
 
 ## Limitations
 
-This script performs a file import, not an audit. The records describe a fictional organisation and simulated work. Review the staged files and reconcile the source IDs and cross-references before presenting the portfolio as complete.
+This is a file import and structural validation, not an audit. The records describe a fictional organisation and simulated work. Review and reconcile source IDs, scoring, statuses and cross-references before presenting the portfolio as complete. A successful GitHub Actions run does not establish ISO/IEC 42001 conformity, legal compliance or control effectiveness.
