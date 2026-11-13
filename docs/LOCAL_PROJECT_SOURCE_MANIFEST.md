@@ -2,7 +2,7 @@
 
 **Status: source import pending.** This manifest records the contents of the reviewed GitHub-ready archive. It does not mean those files have been published to this repository.
 
-The fictional case study is MaltaAI Solutions Ltd., an AI recruitment SaaS provider. The reviewed archive `MaltaAI-Governance-GitHub-Ready.zip` contains a selected 50-file working set under `iso42001/`, including 25 CSV files. The archive was structurally checked before publication; the source records are still absent from the GitHub tree.
+The fictional case study is MaltaAI Solutions Ltd., an AI recruitment SaaS provider. The reviewed archive `MaltaAI-Governance-GitHub-Ready.zip` contains a selected 50-file working set under `iso42001/`, including 26 CSV files. The archive was structurally checked before publication; the source records are still absent from the GitHub tree.
 
 ## Reviewed source inventory
 
