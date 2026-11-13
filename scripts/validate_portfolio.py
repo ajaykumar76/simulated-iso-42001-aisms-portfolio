@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Validate repository hygiene for the simulated ISO/IEC 42001 portfolio.
+"""Structural validation for the simulated ISO/IEC 42001 portfolio.
 
-Checks are structural only. They do not establish implementation, effectiveness,
-legal compliance, audit quality, or conformity with ISO/IEC 42001.
+This checks repository hygiene and selected archive inventory counts only. It
+does not establish implementation, effectiveness, audit quality, legal
+compliance, or conformity with ISO/IEC 42001.
 """
 from __future__ import annotations
 
@@ -23,18 +24,22 @@ REQUIRED_TEMPLATES = {
     "Control_Evidence_Register_Template.csv",
     "Audit_Findings_CAPA_Template.csv",
 }
-REQUIRED_SOURCE_FILES = (
-    "03-AI-System-Inventory/AI_System_Inventory.csv",
-    "04-AI-Risk-Assessment/AI_Risk_Assessment_Register.csv",
-    "05-AI-Impact-Assessment/AI_Impact_Assessment_Register.csv",
-    "06-Risk-Treatment/AI_Risk_Treatment_Plan.csv",
-    "08-Data-and-Supplier-Governance/AI_Data_and_Supplier_Register.csv",
-    "09-Control-Mapping/ISO42001_Control_Mapping.csv",
-    "10-Control-Evidence/AI_Control_Evidence_Tracker.csv",
-    "11-Internal-Audit/AI_Audit_Findings_Register.csv",
-    "12-NCR-CAPA/AI_NCR_CAPA_Register.csv",
-    "16-AI-Impact-Assessment/AI_Impact_Assessment_Register.csv",
-)
+# Expected data rows (excluding the CSV header) in the reviewed 50-file archive.
+EXPECTED_SOURCE_ROWS = {
+    "03-AI-System-Inventory/AI_System_Inventory.csv": 5,
+    "04-AI-Risk-Assessment/AI_Risk_Assessment_Register.csv": 10,
+    "05-AI-Impact-Assessment/AI_Impact_Assessment_Register.csv": 8,
+    "06-Risk-Treatment/AI_Risk_Treatment_Plan.csv": 10,
+    "08-Data-and-Supplier-Governance/AI_Data_and_Supplier_Register.csv": 5,
+    "09-Control-Mapping/ISO42001_Control_Mapping.csv": 14,
+    "10-Control-Evidence/AI_Control_Evidence_Tracker.csv": 15,
+    "11-Internal-Audit/AI_Internal_Audit_Checklist.csv": 15,
+    "11-Internal-Audit/AI_Audit_Findings_Register.csv": 6,
+    "11-Internal-Audit/AI_Audit_CAPA_Cross_Reference.csv": 6,
+    "12-NCR-CAPA/AI_NCR_CAPA_Register.csv": 6,
+    "13-Management-Review/AI_Management_Review_Action_Register.csv": 6,
+    "16-AI-Impact-Assessment/AI_Impact_Assessment_Register.csv": 8,
+}
 
 
 def csv_files() -> list[Path]:
@@ -44,21 +49,27 @@ def csv_files() -> list[Path]:
     )
 
 
-def validate_csv(path: Path) -> list[str]:
-    issues: list[str] = []
-    rel = path.relative_to(ROOT)
+def read_csv(path: Path) -> tuple[list[list[str]] | None, str | None]:
     try:
         with path.open("r", encoding="utf-8-sig", newline="") as handle:
-            rows = list(csv.reader(handle))
+            return list(csv.reader(handle)), None
     except (OSError, UnicodeError, csv.Error) as exc:
-        return [f"{rel}: cannot read CSV ({exc})"]
+        return None, str(exc)
 
+
+def validate_csv(path: Path) -> list[str]:
+    rows, error = read_csv(path)
+    rel = path.relative_to(ROOT)
+    if error:
+        return [f"{rel}: cannot read CSV ({error})"]
+    assert rows is not None
     if not rows:
         return [f"{rel}: file is empty"]
     header = rows[0]
     if not header or all(not cell.strip() for cell in header):
         return [f"{rel}: header row is empty"]
 
+    issues: list[str] = []
     normalized = [cell.strip().casefold() for cell in header]
     if any(not cell for cell in normalized):
         issues.append(f"{rel}: header contains a blank column name")
@@ -79,17 +90,18 @@ def validate_readme_links() -> list[str]:
     if not readme.is_file():
         return ["README.md is missing"]
     issues: list[str] = []
-    text = readme.read_text(encoding="utf-8")
-    for raw in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text):
+    content = readme.read_text(encoding="utf-8")
+    for raw in re.findall(r"!?[[^]]*]\(([^)]+)\)", content):
         target = raw.strip().split()[0].strip("<>")
         if not target or target.startswith(("http://", "https://", "mailto:", "#")):
             continue
         target = unquote(target.split("#", 1)[0])
         if not target:
             continue
-        if not (ROOT / target).resolve().is_relative_to(ROOT.resolve()):
+        resolved = (ROOT / target).resolve()
+        if not resolved.is_relative_to(ROOT.resolve()):
             issues.append(f"README.md: link escapes repository: {raw}")
-        elif not (ROOT / target).exists():
+        elif not resolved.exists():
             issues.append(f"README.md: broken local link: {raw}")
     return issues
 
@@ -105,11 +117,22 @@ def validate_source_tree() -> tuple[list[str], list[str]]:
         return ["iso42001 exists but is not a directory"], warnings
 
     source_files = [p for p in source.rglob("*") if p.is_file()]
-    if len(source_files) < 40:
-        issues.append(f"iso42001/: found {len(source_files)} files; expected at least 40 reviewed source files")
-    for relative in REQUIRED_SOURCE_FILES:
-        if not (source / relative).is_file():
+    if len(source_files) < 50:
+        issues.append(f"iso42001/: found {len(source_files)} files; expected at least 50 files in the reviewed working set")
+
+    for relative, expected_rows in EXPECTED_SOURCE_ROWS.items():
+        path = source / relative
+        if not path.is_file():
             issues.append(f"iso42001/: required source file missing: {relative}")
+            continue
+        rows, error = read_csv(path)
+        if error:
+            issues.append(f"iso42001/{relative}: cannot read CSV ({error})")
+            continue
+        assert rows is not None
+        actual_rows = sum(1 for row in rows[1:] if row and any(cell.strip() for cell in row))
+        if actual_rows != expected_rows:
+            issues.append(f"iso42001/{relative}: expected {expected_rows} data rows, found {actual_rows}")
     return issues, warnings
 
 
@@ -118,7 +141,8 @@ def main() -> int:
     issues: list[str] = []
     warnings: list[str] = []
 
-    present_templates = {p.name for p in (ROOT / "templates").glob("*.csv")} if (ROOT / "templates").exists() else set()
+    template_dir = ROOT / "templates"
+    present_templates = {p.name for p in template_dir.glob("*.csv")} if template_dir.exists() else set()
     for missing in sorted(REQUIRED_TEMPLATES - present_templates):
         issues.append(f"templates/: required template missing: {missing}")
 
@@ -138,6 +162,8 @@ def main() -> int:
     print(f"CSV structure checks passed for {len(files)} file(s).")
     print("README local-link checks passed.")
     print("Required template inventory check passed.")
+    if (ROOT / "iso42001").is_dir():
+        print(f"Reviewed source inventory checks passed ({len(EXPECTED_SOURCE_ROWS)} register row-count checks).")
     for warning in warnings:
         print(f"NOTICE: {warning}")
     print("These checks do not assess control implementation, evidence sufficiency, audit conclusions, legal compliance, or ISO/IEC 42001 conformity.")
