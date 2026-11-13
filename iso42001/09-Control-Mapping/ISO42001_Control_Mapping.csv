@@ -1,15 +1,15 @@
-Control ID,Theme,Intent,Owner,Evidence,Test status,Record status
-AIMS-C-01,AI policy,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-02,Roles,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-03,System inventory,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-04,Risk assessment,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-05,Impact assessment,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-06,Data governance,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-07,Supplier governance,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-08,Transparency,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-09,Human oversight,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-10,Traceability,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-11,Incident management,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-12,Change management,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-13,Internal audit,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
-AIMS-C-14,Improvement,Simulated control intent,Owner pending,Evidence pending,Not tested,Simulated
+Control ID,Theme,Control objective,Applicability,Proposed owner,Expected evidence,Current status,Record status
+AIMS-C-01,Governance and policy,"Establish direction, policy, scope, objectives and accountability",Applicable,Top management,"Approved policy, scope, objectives and review decisions",Draft only,Simulated
+AIMS-C-02,Roles and competence,"Assign responsibilities, decision rights, competence and awareness",Applicable,AIMS coordinator,"Role matrix, competence criteria and training records",Not evidenced,Simulated
+AIMS-C-03,AI system lifecycle,"Maintain inventory, intended purpose, lifecycle and change records",Applicable,AI system owner,"System dossiers, release approvals and change history",Inventory illustrative,Simulated
+AIMS-C-04,AI risk management,"Identify, analyse, evaluate, treat and review AI risks",Applicable,AI risk owner,"Approved method, risk rationale, treatment and acceptance records",Method unapproved,Simulated
+AIMS-C-05,AI impact assessment,"Assess impacts on individuals, groups and society across lifecycle",Applicable,AI governance owner,"Impact assessments, consultation and reassessment records",Scenario analysis only,Simulated
+AIMS-C-06,Data governance,"Govern data quality, provenance, purpose, access, retention and protection",Applicable,Data owner,"Data inventory, lineage, quality results and access reviews",Plan only,Simulated
+AIMS-C-07,Third-party relationships,"Assess and monitor suppliers, model providers and external dependencies",Applicable,Supplier owner,"Due diligence, contracts, assurance and change reviews",Generic categories only,Simulated
+AIMS-C-08,Transparency and information,"Provide information on AI use, limitations and interaction",Applicable,Product owner,"Notices, user instructions and communication tests",Not evidenced,Simulated
+AIMS-C-09,Human oversight,"Define competent review, intervention, override and escalation",Applicable,Human oversight lead,"Workflow design, training, review samples and override logs",Not evidenced,Simulated
+AIMS-C-10,Traceability and records,Maintain proportionate records to reconstruct relevant system events,Applicable,Engineering lead,Versioned model/configuration logs and access-controlled records,Not evidenced,Simulated
+AIMS-C-11,Security and resilience,"Protect AI assets, interfaces, data and service availability",Applicable,Security lead,"Threat assessments, security tests, access logs and resilience tests",Not evidenced,Simulated
+AIMS-C-12,Incident management,"Detect, triage, contain, investigate and learn from AI incidents",Applicable,Security lead,"Incident procedure, exercise records and corrective actions",Procedure draft,Simulated
+AIMS-C-13,Performance evaluation and audit,"Monitor objectives, evaluate controls and conduct independent audits",Applicable,AIMS coordinator / auditor,"Metrics, audit programme, workpapers and reports",Not performed,Simulated
+AIMS-C-14,Continual improvement,"Address nonconformities, corrective actions and improvement opportunities",Applicable,Top management,"Root-cause records, effectiveness checks and improvement log",Open proposals,Simulated

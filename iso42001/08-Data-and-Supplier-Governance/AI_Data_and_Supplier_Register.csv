@@ -1,6 +1,6 @@
-Supplier ID,Supplier,Type,Service,Due diligence,Risk tier,Review,Status,Record status
-SUP-001,Cloud host,Infrastructure,Hosting,Security and data processing,Medium,Annual,Pending,Simulated
-SUP-002,Model provider,AI model,Text generation,Model docs and change notices,High,Quarterly,Pending,Simulated
-SUP-003,CV parser,AI component,Extraction,Accuracy and subprocessors,High,Quarterly,Pending,Simulated
-SUP-004,Identity provider,Access,Authentication,Access and incident controls,Medium,Annual,Pending,Simulated
-SUP-005,Monitoring vendor,Observability,Logging,Retention and data location,Medium,Annual,Pending,Simulated
+Supplier ID,Supplier,Type,Service,Data access and processing,Due diligence focus,Risk tier,Review cadence,Status,Record status
+SUP-001,Illustrative cloud hosting provider,Infrastructure hosting,"Compute, storage and network",Applicant data may be hosted/backed up; region and subprocessors unknown,"Security assurance, data location, access, resilience, deletion and incident notice",High,Quarterly proposed,Not assessed,Simulated
+SUP-002,Illustrative foundation model provider,AI model service,Candidate summaries and chatbot generation,Prompts and applicant information may be transmitted; retention/training terms unknown,"Data-use terms, model documentation, version changes, evaluation, security and incident notice",Critical,Quarterly proposed,Not assessed,Simulated
+SUP-003,Illustrative CV parsing provider,AI extraction component,CV field extraction,CV content may be processed by external parsing service,"Accuracy by document type, data handling, subprocessors, retention and change control",High,Quarterly proposed,Not assessed,Simulated
+SUP-004,Illustrative identity provider,Authentication service,User authentication and access management,User identity and authentication metadata processed,"MFA, privileged access, logging, recovery, assurance and breach response",Medium,Annual proposed,Not assessed,Simulated
+SUP-005,Illustrative monitoring provider,Observability service,"Logs, metrics and alerts",Telemetry may include identifiers or prompt/output fragments,"Data minimisation, masking, access, retention, region, export and deletion",High,Quarterly proposed,Not assessed,Simulated

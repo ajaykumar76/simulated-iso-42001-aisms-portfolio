@@ -1,20 +1,12 @@
-# Inventory Review
+# AI system inventory review
 
-**Organisation:** MaltaAI Solutions Ltd. (fictional AI recruitment SaaS)
+## Scenario and purpose
+Five functional capabilities are listed: CV extraction, candidate ranking, candidate summaries, chatbot and analytics. This is a functional view, not a verified technical architecture.
 
-**Status:** Reconstructed simulated portfolio artefact. These records were generated to restore a coherent example project because the uploaded archive contained only the repository scaffold. They are not recovered from the user's local project and must be reviewed before being presented as the user's completed work.
+## Required process and records
+Resolve whether features are separate systems or modules; identify model families/versions; distinguish training from inference data; map controller/processor roles; document deployment stage, integrations and human decision points.
 
-## Purpose and scope
+## Status and limitations
+No architecture inspection, interview or technical validation has occurred. Entries remain scenario assumptions.
 
-This document supports a simulated ISO/IEC 42001 AIMS case study covering CV extraction, candidate ranking, candidate summaries, a recruitment chatbot and recruitment analytics in an employment context.
-
-## Review requirements
-
-- Confirm ownership, approval authority and review dates.
-- Link decisions to system, risk, impact and control records.
-- Attach genuine source evidence before marking controls implemented or tested.
-- Record assumptions, open actions and residual risks.
-
-## Limitations
-
-All related entries are illustrative and simulated. This portfolio does not demonstrate an operational AIMS, actual audit execution, certification, legal compliance or conformity with ISO/IEC 42001.
+**Portfolio status:** reconstructed simulation for learning purposes. It is not evidence of operational implementation, completed professional audit work, certification, legal compliance or conformity with ISO/IEC 42001.

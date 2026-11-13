@@ -1,20 +1,12 @@
-# AI Policy
+# AI policy — draft
 
-**Organisation:** MaltaAI Solutions Ltd. (fictional AI recruitment SaaS)
+## Scenario and purpose
+The fictional organisation intends to govern AI-enabled recruitment services in a controlled, transparent and accountable manner. AI outputs are decision-support inputs and do not silently replace accountable human judgement.
 
-**Status:** Reconstructed simulated portfolio artefact. These records were generated to restore a coherent example project because the uploaded archive contained only the repository scaffold. They are not recovered from the user's local project and must be reviewed before being presented as the user's completed work.
+## Required process and records
+Document intended purposes; assess risk and impact before release and after material change; govern data; disclose AI use and limitations; provide meaningful human oversight; assess suppliers; maintain traceability; monitor outcomes; investigate incidents; improve controls.
 
-## Purpose and scope
+## Status and limitations
+Top management approval, communication, resourcing and periodic review are required before this draft can be treated as policy. No approval or implementation is claimed.
 
-This document supports a simulated ISO/IEC 42001 AIMS case study covering CV extraction, candidate ranking, candidate summaries, a recruitment chatbot and recruitment analytics in an employment context.
-
-## Review requirements
-
-- Confirm ownership, approval authority and review dates.
-- Link decisions to system, risk, impact and control records.
-- Attach genuine source evidence before marking controls implemented or tested.
-- Record assumptions, open actions and residual risks.
-
-## Limitations
-
-All related entries are illustrative and simulated. This portfolio does not demonstrate an operational AIMS, actual audit execution, certification, legal compliance or conformity with ISO/IEC 42001.
+**Portfolio status:** reconstructed simulation for learning purposes. It is not evidence of operational implementation, completed professional audit work, certification, legal compliance or conformity with ISO/IEC 42001.

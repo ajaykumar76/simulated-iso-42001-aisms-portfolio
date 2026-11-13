@@ -1,20 +1,12 @@
-# Data Governance Plan
+# AI data governance plan
 
-**Organisation:** MaltaAI Solutions Ltd. (fictional AI recruitment SaaS)
+## Scenario and purpose
+Potential data includes CVs, contact details, employment/education history, communications, recruiter annotations, prompts/outputs, evaluation data and telemetry. Free text may disclose sensitive information unexpectedly.
 
-**Status:** Reconstructed simulated portfolio artefact. These records were generated to restore a coherent example project because the uploaded archive contained only the repository scaffold. They are not recovered from the user's local project and must be reviewed before being presented as the user's completed work.
+## Required process and records
+Define purpose and roles; minimise fields; record provenance and lineage; control access; set retention/deletion; separate production from test data; assess transfers/subprocessors; prohibit unassessed secondary model-training use.
 
-## Purpose and scope
+## Status and limitations
+Required artefacts include data inventory, flow, access matrix, retention schedule, quality results and privacy screening. No live data processing is represented.
 
-This document supports a simulated ISO/IEC 42001 AIMS case study covering CV extraction, candidate ranking, candidate summaries, a recruitment chatbot and recruitment analytics in an employment context.
-
-## Review requirements
-
-- Confirm ownership, approval authority and review dates.
-- Link decisions to system, risk, impact and control records.
-- Attach genuine source evidence before marking controls implemented or tested.
-- Record assumptions, open actions and residual risks.
-
-## Limitations
-
-All related entries are illustrative and simulated. This portfolio does not demonstrate an operational AIMS, actual audit execution, certification, legal compliance or conformity with ISO/IEC 42001.
+**Portfolio status:** reconstructed simulation for learning purposes. It is not evidence of operational implementation, completed professional audit work, certification, legal compliance or conformity with ISO/IEC 42001.

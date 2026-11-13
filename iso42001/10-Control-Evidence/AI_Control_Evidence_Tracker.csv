@@ -1,16 +1,16 @@
 Evidence ID,Control ID,Evidence item,Reference,Owner,Evidence status,Verification,Record status
-EVD-001,AIMS-C-01,Policy,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-002,AIMS-C-02,Role matrix,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-003,AIMS-C-03,Inventory,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-004,AIMS-C-04,Risk register,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-005,AIMS-C-05,Impact assessment,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-006,AIMS-C-06,Data review,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-007,AIMS-C-07,Supplier review,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-008,AIMS-C-08,Disclosure,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-009,AIMS-C-09,Human review,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-010,AIMS-C-10,Logs,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-011,AIMS-C-11,Incident procedure,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-012,AIMS-C-12,Change record,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-013,AIMS-C-13,Audit checklist,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-014,AIMS-C-14,CAPA,Reference planned,Owner pending,Not provided,Not verified,Simulated
-EVD-015,AIMS-C-01,Management review,Reference planned,Owner pending,Not provided,Not verified,Simulated
+EVD-001,AIMS-C-01,AI policy and scope approval,"Planned: Approved policy, scope, objectives and review decisions",Top management,Not provided,Not verified,Simulated
+EVD-002,AIMS-C-02,Roles and competence,"Planned: Role matrix, competence criteria and training records",AIMS coordinator,Not provided,Not verified,Simulated
+EVD-003,AIMS-C-03,AI system dossier,"Planned: System dossiers, release approvals and change history",AI system owner,Not provided,Not verified,Simulated
+EVD-004,AIMS-C-04,Risk assessment method and register,"Planned: Approved method, risk rationale, treatment and acceptance records",AI risk owner,Not provided,Not verified,Simulated
+EVD-005,AIMS-C-05,AI impact assessments,"Planned: Impact assessments, consultation and reassessment records",AI governance owner,Not provided,Not verified,Simulated
+EVD-006,AIMS-C-06,Data governance artefacts,"Planned: Data inventory, lineage, quality results and access reviews",Data owner,Not provided,Not verified,Simulated
+EVD-007,AIMS-C-07,Supplier due diligence,"Planned: Due diligence, contracts, assurance and change reviews",Supplier owner,Not provided,Not verified,Simulated
+EVD-008,AIMS-C-08,AI transparency notices,"Planned: Notices, user instructions and communication tests",Product owner,Not provided,Not verified,Simulated
+EVD-009,AIMS-C-09,Human oversight records,"Planned: Workflow design, training, review samples and override logs",Human oversight lead,Not provided,Not verified,Simulated
+EVD-010,AIMS-C-10,Traceability logs,Planned: Versioned model/configuration logs and access-controlled records,Engineering lead,Not provided,Not verified,Simulated
+EVD-011,AIMS-C-11,Security assessment,"Planned: Threat assessments, security tests, access logs and resilience tests",Security lead,Not provided,Not verified,Simulated
+EVD-012,AIMS-C-12,AI incident exercise,"Planned: Incident procedure, exercise records and corrective actions",Security lead,Not provided,Not verified,Simulated
+EVD-013,AIMS-C-13,Monitoring and internal audit,"Planned: Metrics, audit programme, workpapers and reports",AIMS coordinator / auditor,Not provided,Not verified,Simulated
+EVD-014,AIMS-C-14,Corrective action effectiveness,"Planned: Root-cause records, effectiveness checks and improvement log",Top management,Not provided,Not verified,Simulated
+EVD-015,AIMS-C-03,Change and release management,"Planned: change ticket, impact review, test and release approval",AI system owner,Not provided,Not verified,Simulated

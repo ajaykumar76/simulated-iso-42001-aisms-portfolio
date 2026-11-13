@@ -1,20 +1,12 @@
-# Control Applicability Notes
+# Control applicability notes
 
-**Organisation:** MaltaAI Solutions Ltd. (fictional AI recruitment SaaS)
+## Scenario and purpose
+Assess relevance using scope, architecture, lifecycle, stakeholders, risk and supplier dependencies. Current themes include governance, roles, lifecycle, risk/impact, data, suppliers, transparency, human oversight, traceability, security, incidents, audit and improvement.
 
-**Status:** Reconstructed simulated portfolio artefact. These records were generated to restore a coherent example project because the uploaded archive contained only the repository scaffold. They are not recovered from the user's local project and must be reviewed before being presented as the user's completed work.
+## Required process and records
+No control is marked not applicable. This does not prove every normative requirement or Annex A control applies or is implemented.
 
-## Purpose and scope
+## Status and limitations
+Record standard reference, objective, scope/risk linkage, decision, rationale, owner, evidence and approval. Competent review remains outstanding.
 
-This document supports a simulated ISO/IEC 42001 AIMS case study covering CV extraction, candidate ranking, candidate summaries, a recruitment chatbot and recruitment analytics in an employment context.
-
-## Review requirements
-
-- Confirm ownership, approval authority and review dates.
-- Link decisions to system, risk, impact and control records.
-- Attach genuine source evidence before marking controls implemented or tested.
-- Record assumptions, open actions and residual risks.
-
-## Limitations
-
-All related entries are illustrative and simulated. This portfolio does not demonstrate an operational AIMS, actual audit execution, certification, legal compliance or conformity with ISO/IEC 42001.
+**Portfolio status:** reconstructed simulation for learning purposes. It is not evidence of operational implementation, completed professional audit work, certification, legal compliance or conformity with ISO/IEC 42001.

@@ -1,20 +1,12 @@
-# Internal Audit Plan
+# Internal audit plan
 
-**Organisation:** MaltaAI Solutions Ltd. (fictional AI recruitment SaaS)
+## Scenario and purpose
+Proposed objective is to evaluate whether selected AIMS processes are designed, documented and, where evidence permits, operating against defined criteria. Scope includes inventory, risk/impact, suppliers, oversight, data, traceability, incidents and improvement.
 
-**Status:** Reconstructed simulated portfolio artefact. These records were generated to restore a coherent example project because the uploaded archive contained only the repository scaffold. They are not recovered from the user's local project and must be reviewed before being presented as the user's completed work.
+## Required process and records
+Plan objective, scope, criteria, period, independence, sampling and resources. Auditor should not audit their own work; use independent review or document compensating safeguards.
 
-## Purpose and scope
+## Status and limitations
+No audit engagement has been performed. Outputs would include plan, workpapers, findings, conclusions and follow-up.
 
-This document supports a simulated ISO/IEC 42001 AIMS case study covering CV extraction, candidate ranking, candidate summaries, a recruitment chatbot and recruitment analytics in an employment context.
-
-## Review requirements
-
-- Confirm ownership, approval authority and review dates.
-- Link decisions to system, risk, impact and control records.
-- Attach genuine source evidence before marking controls implemented or tested.
-- Record assumptions, open actions and residual risks.
-
-## Limitations
-
-All related entries are illustrative and simulated. This portfolio does not demonstrate an operational AIMS, actual audit execution, certification, legal compliance or conformity with ISO/IEC 42001.
+**Portfolio status:** reconstructed simulation for learning purposes. It is not evidence of operational implementation, completed professional audit work, certification, legal compliance or conformity with ISO/IEC 42001.
