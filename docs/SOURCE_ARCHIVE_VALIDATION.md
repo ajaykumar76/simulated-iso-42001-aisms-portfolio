@@ -14,7 +14,7 @@ The GitHub-ready archive contains 50 files under `iso42001/` (192,455 uncompress
 - 6 findings and 6 CAPA records
 - 0 issues reported by that validator
 
-The CSVs were also parsed independently. The archive contains 25 CSV files; all were readable as UTF-8 CSV files. The main registers include:
+The CSVs were also parsed independently. The archive contains 26 CSV files; all were readable as UTF-8 CSV files. The main registers include:
 
 | Register | Rows |
 |---|---:|
