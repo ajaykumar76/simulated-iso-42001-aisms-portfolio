@@ -21,4 +21,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Validate CSV file structure
-        run: python scripts/validate_portfolio.py
+        run: python scripts/validate_portfolio.py --require-source
