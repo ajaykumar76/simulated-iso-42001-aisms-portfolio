@@ -1,5 +1,7 @@
 # Simulated ISO/IEC 42001:2023 AI Management System (AIMS) Portfolio
 
+[![Portfolio structure checks](https://github.com/ajaykumar76/simulated-iso-42001-aisms-portfolio/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/ajaykumar76/simulated-iso-42001-aisms-portfolio/actions/workflows/validate.yml)
+
 **Project status: portfolio in progress — source project records have not yet been published.**
 
 An educational, simulated AI Management System case study for **MaltaAI Solutions Ltd.**, a fictional provider of AI-enabled recruitment software. The portfolio is intended to demonstrate how an organisation could structure AI governance, risk management, impact assessment, supplier oversight, human oversight, monitoring and internal review using ISO/IEC 42001:2023 as a reference.
@@ -17,6 +19,10 @@ The fictional recruitment platform includes these AI-enabled functions:
 - Recruitment analytics
 
 Because the scenario concerns employment and recruitment, the project treats potential effects on applicants, fairness, transparency, privacy, human oversight and the consequences of AI-assisted decisions as key topics for assessment. A risk classification must be based on the system's actual intended purpose and applicable legal requirements; this portfolio does not make a binding EU AI Act classification.
+
+## Automated repository checks
+
+GitHub Actions runs `scripts/validate_portfolio.py` on pushes and pull requests to `main`. It checks CSV readability, header integrity, duplicate column names and row-width consistency. A passing result confirms file-structure checks only; it does **not** verify the accuracy of risk assessments, implementation of controls, sufficiency of evidence, audit conclusions or ISO/IEC 42001 conformity.
 
 ## What is currently in this repository
 
