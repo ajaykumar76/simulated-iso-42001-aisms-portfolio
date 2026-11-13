@@ -92,7 +92,7 @@ def validate_readme_links() -> list[str]:
         return ["README.md is missing"]
     issues: list[str] = []
     content = readme.read_text(encoding="utf-8")
-    for raw in re.findall(r"!?[[^]]*]\(([^)]+)\)", content):
+    for raw in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", content):
         target = raw.strip().split()[0].strip("<>")
         if not target or target.startswith(("http://", "https://", "mailto:", "#")):
             continue
