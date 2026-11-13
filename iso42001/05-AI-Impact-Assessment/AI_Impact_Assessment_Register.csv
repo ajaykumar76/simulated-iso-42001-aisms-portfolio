@@ -1,0 +1,9 @@
+Assessment ID,System,Domain,Stakeholders,Potential impact,Mitigation,Status,Record status
+AII-001,CV extraction,Privacy,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-002,Candidate ranking,Fairness,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-003,Candidate summaries,Accuracy,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-004,Chatbot,Transparency,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-005,Analytics,Data protection,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-006,CV extraction,Security,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-007,Ranking,Human oversight,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated
+AII-008,All systems,Accountability,Applicants and staff,Potential impact; assumptions require validation,Human review proposed,Open,Simulated

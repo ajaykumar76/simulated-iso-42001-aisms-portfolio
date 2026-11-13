@@ -1,0 +1,7 @@
+Action ID,Action,Owner,Approval,Status,Record status
+MR-001,Assign accountable owners,Owner pending,Not approved,Open,Simulated
+MR-002,Complete treatment and acceptance,Owner pending,Not approved,Open,Simulated
+MR-003,Complete supplier assessments,Owner pending,Not approved,Open,Simulated
+MR-004,Define decision gates and override,Owner pending,Not approved,Open,Simulated
+MR-005,Apply document metadata,Owner pending,Not approved,Open,Simulated
+MR-006,Define taxonomy and workflow,Owner pending,Not approved,Open,Simulated

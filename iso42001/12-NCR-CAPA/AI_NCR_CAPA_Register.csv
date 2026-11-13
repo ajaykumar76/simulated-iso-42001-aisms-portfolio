@@ -1,0 +1,7 @@
+NCR ID,Finding ID,Severity,Summary,Action,Status,Record status
+NCR-001,AIF-001,High,Accountability roles not sufficiently assigned,Assign accountable owners,Open,Simulated
+NCR-002,AIF-002,Critical,Residual risk approval evidence incomplete,Complete treatment and acceptance,Open,Simulated
+NCR-003,AIF-003,High,Supplier due diligence evidence incomplete,Complete supplier assessments,Open,Simulated
+NCR-004,AIF-004,Critical,Human intervention evidence needs strengthening,Define decision gates and override,Open,Simulated
+NCR-005,AIF-005,Medium,Ownership and review metadata inconsistent,Apply document metadata,Open,Simulated
+NCR-006,AIF-006,High,AI incident escalation evidence incomplete,Define taxonomy and workflow,Open,Simulated

@@ -1,0 +1,11 @@
+Risk ID,System,Rating,Proposed controls,Action,Owner,Status,Residual approval,Record status
+AIR-001,CV extraction,High,Access control and data minimisation,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-002,Candidate ranking,Critical,Bias testing and human review,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-003,Candidate summaries,High,Source traceability and verification,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-004,Recruitment chatbot,Medium,AI disclosure and escalation,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-005,Analytics,Medium,Aggregation and access controls,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-006,CV extraction,High,Input isolation and testing,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-007,Candidate ranking,Critical,Human authority and override,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-008,All systems,High,Supplier change monitoring,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-009,All systems,High,Versioned logs and retention,Implement and test,AI Product Owner,Pending,Not approved,Simulated
+AIR-010,All systems,High,AI incident workflow,Implement and test,AI Product Owner,Pending,Not approved,Simulated

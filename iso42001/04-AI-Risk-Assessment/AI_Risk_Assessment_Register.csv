@@ -1,0 +1,11 @@
+Risk ID,System,Domain,Scenario,Likelihood,Impact,Score,Rating,Treatment,Status,Record status
+AIR-001,CV extraction,Privacy,Applicant personal data exposure,3,5,15,High,Access control and data minimisation,Open,Simulated
+AIR-002,Candidate ranking,Fairness,Biased ranking outcomes,4,5,20,Critical,Bias testing and human review,Open,Simulated
+AIR-003,Candidate summaries,Accuracy,Inaccurate generated summaries,3,4,12,High,Source traceability and verification,Open,Simulated
+AIR-004,Recruitment chatbot,Transparency,AI output mistaken for human advice,3,3,9,Medium,AI disclosure and escalation,Open,Simulated
+AIR-005,Analytics,Privacy,Re-identification from granular reports,2,4,8,Medium,Aggregation and access controls,Open,Simulated
+AIR-006,CV extraction,Security,Malicious documents or prompt injection,3,4,12,High,Input isolation and testing,Open,Simulated
+AIR-007,Candidate ranking,Human oversight,Over-reliance on automated recommendations,4,5,20,Critical,Human authority and override,Open,Simulated
+AIR-008,All systems,Supplier,Third-party model changes affect outputs,3,4,12,High,Supplier change monitoring,Open,Simulated
+AIR-009,All systems,Traceability,Insufficient output reconstruction logs,3,4,12,High,Versioned logs and retention,Open,Simulated
+AIR-010,All systems,Incident,Delayed AI incident escalation,3,4,12,High,AI incident workflow,Open,Simulated

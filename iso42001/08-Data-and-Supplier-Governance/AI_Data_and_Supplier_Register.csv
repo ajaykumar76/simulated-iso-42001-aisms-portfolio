@@ -1,0 +1,6 @@
+Supplier ID,Supplier,Type,Service,Due diligence,Risk tier,Review,Status,Record status
+SUP-001,Cloud host,Infrastructure,Hosting,Security and data processing,Medium,Annual,Pending,Simulated
+SUP-002,Model provider,AI model,Text generation,Model docs and change notices,High,Quarterly,Pending,Simulated
+SUP-003,CV parser,AI component,Extraction,Accuracy and subprocessors,High,Quarterly,Pending,Simulated
+SUP-004,Identity provider,Access,Authentication,Access and incident controls,Medium,Annual,Pending,Simulated
+SUP-005,Monitoring vendor,Observability,Logging,Retention and data location,Medium,Annual,Pending,Simulated

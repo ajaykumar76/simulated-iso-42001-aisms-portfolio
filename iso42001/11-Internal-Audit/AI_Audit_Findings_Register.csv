@@ -1,0 +1,7 @@
+Finding ID,Area,Severity,Observation,Action,Status,Record status
+AIF-001,Roles,High,Accountability roles not sufficiently assigned,Assign accountable owners,Open,Simulated
+AIF-002,Residual risks,Critical,Residual risk approval evidence incomplete,Complete treatment and acceptance,Open,Simulated
+AIF-003,Suppliers,High,Supplier due diligence evidence incomplete,Complete supplier assessments,Open,Simulated
+AIF-004,Human oversight,Critical,Human intervention evidence needs strengthening,Define decision gates and override,Open,Simulated
+AIF-005,Document control,Medium,Ownership and review metadata inconsistent,Apply document metadata,Open,Simulated
+AIF-006,AI incidents,High,AI incident escalation evidence incomplete,Define taxonomy and workflow,Open,Simulated

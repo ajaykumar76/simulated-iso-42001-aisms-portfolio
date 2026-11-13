@@ -1,0 +1,6 @@
+System ID,AI system,Function,Purpose,Use context,Decision influence,Affected persons,Human oversight,Status
+AIS-001,CV extraction assistant,HR,Extract CV fields,Employment/recruitment,Yes,Applicants,Recruiter verifies extraction,Simulated
+AIS-002,Candidate ranking engine,HR,Rank applicants,Employment/recruitment,Yes,Applicants,Recruiter makes final decision,Simulated
+AIS-003,Candidate summary generator,HR,Summarise applicant profiles,Employment/recruitment,Yes,Applicants,Recruiter checks source CV,Simulated
+AIS-004,Recruitment chatbot,HR,Answer process questions,Employment/recruitment,No,Applicants,Escalation to staff,Simulated
+AIS-005,Recruitment analytics,HR,Aggregate pipeline trends,Employment/recruitment,No,Applicants and staff,Aggregated reporting,Simulated
