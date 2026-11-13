@@ -22,7 +22,7 @@ Because the scenario concerns employment and recruitment, the project treats pot
 
 ## Automated repository checks
 
-GitHub Actions runs `scripts/validate_portfolio.py` on pushes and pull requests to `main`. It checks CSV readability, header integrity, duplicate column names and row-width consistency. A passing result confirms file-structure checks only; it does **not** verify the accuracy of risk assessments, implementation of controls, sufficiency of evidence, audit conclusions or ISO/IEC 42001 conformity.
+GitHub Actions runs `scripts/validate_portfolio.py` on pushes and pull requests to `main`. It checks required template presence, CSV readability, header integrity, duplicate column names, row-width consistency and local README links. If `iso42001/` has been imported, it also checks the expected source-file inventory and minimum file count. Until then, it reports that source records are unpublished. A passing result confirms repository hygiene only; it does **not** verify risk-assessment accuracy, cross-register traceability, control implementation, evidence sufficiency, audit conclusions, legal compliance or ISO/IEC 42001 conformity.
 
 ## Source archive review
 
