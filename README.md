@@ -40,7 +40,7 @@ The local source archive has been reviewed and its selected 50-file working set 
 | `templates/Control_Evidence_Register_Template.csv` | Map controls to evidence and verification status | Blank template |
 | `templates/Audit_Findings_CAPA_Template.csv` | Record simulated audit findings and corrective actions | Blank template |
 
-The author has previously described a local working project containing an AI inventory, 10 risk records, 8 impact assessments, 10 treatment records, 5 supplier records, 14 control/evidence records, 15 audit checklist items and 6 simulated findings. **Those local records are not included in this GitHub repository yet**, so the counts above are not independently verifiable here and are not presented as published deliverables.
+The reviewed local archive contains 5 AI system inventory records, 10 risk records, two separate impact-assessment registers with 8 records each, 10 treatment records, 5 supplier records, 14 control-mapping records, 15 control-evidence tracker records, 15 internal-audit checklist items and 6 simulated findings. **Those source records are not included in this GitHub repository yet**; see the [source manifest](docs/LOCAL_PROJECT_SOURCE_MANIFEST.md) and [archive review](docs/SOURCE_ARCHIVE_VALIDATION.md). These counts describe the reviewed archive, not published GitHub deliverables.
 
 ## Local source project import status
 
